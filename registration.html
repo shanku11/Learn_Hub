@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Online Learning Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function submitRegistration(event) {
+      event.preventDefault();
+      window.location.href = "login.html"; // Redirect to login page after registration
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1 class="logo">LearnHub</h1>
+    </div>
+  </header>
+
+  <!-- Registration Section -->
+  <section class="auth-section">
+    <div class="container">
+      <div class="auth-box">
+        <h3>Register</h3>
+        <form onsubmit="submitRegistration(event)">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <input type="password" placeholder="Confirm Password" required>
+          <label><input type="checkbox" required> I agree to the Terms & Conditions</label>
+          <button type="submit" class="btn">Register</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 LearnHub. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
